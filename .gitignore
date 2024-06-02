@@ -1,4 +1,5 @@
 .vscode
 Token.txt
 package-lock.json
+src/public/css
 node_modules/
