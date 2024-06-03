@@ -10,13 +10,25 @@
   "author": "",
   "license": "ISC",
   "description": "",
+  "lint-staged": {
+    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "dependencies": {
     "express": "^4.19.2",
     "express-handlebars": "^7.1.2",
+    "mongoose": "^8.4.1",
     "node-sass": "^9.0.0",
     "nodemon": "^3.1.2"
   },
   "devDependencies": {
-    "morgan": "^1.10.0"
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.5",
+    "morgan": "^1.10.0",
+    "prettier": "^3.3.0"
   }
 }
